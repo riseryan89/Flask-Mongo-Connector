@@ -20,7 +20,7 @@ Reqeust : /auth
 with Json Body(POST):
 ```json
 {
-  "token": <Valid JWT Token>,
+  "token": <ValidJWTToken>,
   "func": "user"
 }
 ```
@@ -31,15 +31,15 @@ Sample Response on Success:
 ```json
 {
     "data": {
-        "SN": <SN - Integer>,
-        "_id": <Doc Id - String>,
-        "email": <Email - String>,
-        "flag": <Flag - String>,
-        "kycID": <KYCID - String>,
-        "nick": <Nick Name - String>,
-        "signupDate": <SignUpDate - DateTime>,
-        "state": <Active Status - String>,
-        "wSN": <wSN - Integer>
+        "SN": <SN-Integer>,
+        "_id": <DocId-String>,
+        "email": <Email-String>,
+        "flag": <Flag-String>,
+        "kycID": <KYCID-String>,
+        "nick": <NickName-String>,
+        "signupDate": <SignUpDate-DateTime>,
+        "state": <ActiveStatus-String>,
+        "wSN": <wSN-Integer>
     },
     "result": "ok"
 }
