@@ -12,3 +12,44 @@
 
 #### Maintain
 * Keep It Simple and Stupid
+
+
+#### USAGE
+Reqeust : /auth
+
+with Json Body(POST):
+```json
+{
+  "token": <Valid JWT Token>,
+  "func": "user"
+}
+```
+
+Currently support only 'user' func.<br><br>
+
+Sample Response on Success:
+```json
+{
+    "data": {
+        "SN": <SN - Integer>,
+        "_id": <Doc Id - String>,
+        "email": <Email - String>,
+        "flag": <Flag - String>,
+        "kycID": <KYCID - String>,
+        "nick": <Nick Name - String>,
+        "signupDate": <SignUpDate - DateTime>,
+        "state": <Active Status - String>,
+        "wSN": <wSN - Integer>
+    },
+    "result": "ok"
+}
+```
+
+
+Sample Response on Fail: 
+```json
+{
+    "data": "invalid signature",
+    "result": "failed"
+}
+```
